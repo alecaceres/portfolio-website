@@ -11,7 +11,7 @@ const Education = () => {
                 description="I have a background in mechatronics engineering and also exchange semesters in Germany"
             />
             <div className="flex flex-col gap-10">
-                {educations.map(education => <ExperienceCard {...education} />)}
+                {educations.map((education, idx) => <ExperienceCard key={`education-${idx}`} {...education} />)}
             </div>
         </section>
     )
