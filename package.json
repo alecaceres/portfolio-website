@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.0",
     "@vercel/speed-insights": "^1.0.10",
     "framer-motion": "^11.0.5",
     "hamburger-react": "^2.5.0",
