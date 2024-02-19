@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Alejandro Caceres",
-  description: "Fullstack react, vue and django engineer with background in data science and mechatronics engineering",
+  description: "Alejandro Caceres: Fullstack Engineer with 4+ years experience. Expert in React, Vue, Django, data science, ML. Fluent in English, Spanish, German.",
 };
 
 export default function RootLayout({

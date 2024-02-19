@@ -8,13 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* TODO: make light mode work too */
+/* @media (prefers-color-scheme: dark) { */
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 25, 25, 25;
     --background-end-rgb: 25, 25, 25;
   }
-}
+/* } */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -40,3 +41,12 @@ body {
       rgba(61,123,244,0.46) 100%
   );
 }
+
+main > div:last-child > div {
+  scroll-margin-top: 120px;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+  

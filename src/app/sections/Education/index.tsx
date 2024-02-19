@@ -5,7 +5,7 @@ import ExperienceCard from "@/components/ExperienceCard";
 
 const Education = () => {
     return (
-        <div className="grid grid-cols-2 gap-4">
+        <section id="education" className="grid grid-cols-2 gap-4">
             <DescriptionColumn
                 title="Education"
                 description="I have a background in mechatronics engineering and also exchange semesters in Germany"
@@ -13,7 +13,7 @@ const Education = () => {
             <div className="flex flex-col gap-10">
                 {educations.map(education => <ExperienceCard {...education} />)}
             </div>
-        </div>
+        </section>
     )
 }
 

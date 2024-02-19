@@ -72,13 +72,13 @@ const RightColumn = () => {
 
 const Technologies = () => {
     return (
-        <div className="grid grid-cols-2 gap-4">
+        <section id="skills" className="grid grid-cols-2 gap-4">
             <DescriptionColumn
                 title="Technologies"
                 description="Some of these I've learnt for work, some for just for fun. I adapt myself to challenges."
             />
             <RightColumn/>
-        </div>
+        </section>
     )
 }
 

@@ -9,17 +9,25 @@ import logo from "images/logo.svg";
 
 const navLinks = [
   {
+    title: "Skills",
+    path: "#skills",
+  },
+  {
     title: "About",
     path: "#about",
+  },
+  {
+    title: "Experience",
+    path: "#experience",
+  },
+  {
+    title: "Education",
+    path: "#education",
   },
   {
     title: "Projects",
     path: "#projects",
   },
-  {
-    title: "Contact",
-    path: "#contact",
-  }
 ];
 
 const Navbar = () => {
