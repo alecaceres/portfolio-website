@@ -3,7 +3,7 @@ import Image from "next/image";
 import DescriptionColumn from "@/components/DescriptionColumn";
 import programmer from  "images/programmer.png"
 
-const About = () => {
+const About: React.FC = () => {
     return (
         <section id="about" className="grid grid-cols-2 gap-4">
             <Image

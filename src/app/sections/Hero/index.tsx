@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
-const thingsILove = [
+const thingsILove: string[] = [
   "coding",
   "travelling",
   "coffee",
@@ -18,9 +18,9 @@ const thingsILove = [
   "music",
   "snow",
   "languages",
-]
+];
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -31,22 +31,18 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="flex flex-col text-white mb-4 text-4xl sm:text-5xl lg:text-6xl leading-tight font-extrabold">
-            <span>
-              Hi,
-            </span>
-            <span>
-              my name is
-            </span>
+            <span>Hi,</span>
+            <span>my name is</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-700 to-secondary-700">
               Alejandro Caceres
-            </span> 
+            </span>
             <span>I&apos;m a fullstack engineer</span>
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-2xl">
-            ... and I love&nbsp;
+            ... and I love{" "}
             <em className="text-primary-50">
               <TypeAnimation
-                sequence={thingsILove.map(item => [item, 1000]).flat()}
+                sequence={thingsILove.map((item) => [item, 1000]).flat()}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
@@ -55,11 +51,12 @@ const HeroSection = () => {
           </p>
           <div>
             <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/caceresale/"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl mr-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium"
-            >
-              Hire Me!
+                href="https://www.linkedin.com/in/caceresale/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl mr-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium"
+              >
+                Hire Me!
             </Link>
           </div>
         </motion.div>

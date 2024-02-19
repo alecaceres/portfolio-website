@@ -42,7 +42,7 @@ body {
   );
 }
 
-main > div:last-child > div {
+main > div > section {
   scroll-margin-top: 120px;
 }
 

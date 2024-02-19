@@ -1,4 +1,13 @@
-const experience = [
+export interface Experience {
+    startMonth: string;
+    endMonth?: string;
+    organisation: string;
+    location: string;
+    description: string;
+    position: string;
+  }
+
+const experience: Experience[] = [
     {
         startMonth: "May 2021",
         organisation: "Workfinder",

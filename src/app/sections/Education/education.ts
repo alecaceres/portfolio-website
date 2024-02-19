@@ -1,4 +1,13 @@
-const education = [
+export interface Education {
+    startMonth: string;
+    endMonth?: string;
+    organisation: string;
+    location: string;
+    description: string;
+    position: string;
+}
+
+const education: Education[] = [
     {
         startMonth: "Jul 2015",
         endMonth: "May 2021",

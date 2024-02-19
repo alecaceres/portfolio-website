@@ -30,7 +30,7 @@ const navLinks = [
   },
 ];
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (

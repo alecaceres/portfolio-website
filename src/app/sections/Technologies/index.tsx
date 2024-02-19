@@ -3,7 +3,12 @@ import Image from "next/image";
 import DescriptionColumn from "@/components/DescriptionColumn";
 import Link from "next/link";
 
-const technologies = [
+interface Technology {
+    name: string;
+    url: string;
+}
+
+const technologies: Technology[] = [
     {
         name: "react",
         url: "https://react.dev/"
@@ -50,7 +55,7 @@ const technologies = [
     }
 ]
 
-const RightColumn = () => {
+const RightColumn: React.FC = () => {
     return (
         <div className="grid grid-cols-4 gap-14">
             {technologies.map(({name, url}) => (
@@ -70,7 +75,7 @@ const RightColumn = () => {
 }
 
 
-const Technologies = () => {
+const Technologies: React.FC = () => {
     return (
         <section id="skills" className="grid grid-cols-2 gap-4">
             <DescriptionColumn

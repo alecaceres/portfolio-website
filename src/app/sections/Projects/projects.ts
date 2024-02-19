@@ -1,4 +1,5 @@
 import personalWebsite from "images/projects/personal-website.png";
+import { StaticImageData } from "next/image";
 
 enum Skill {
     REACT = "React.js",
@@ -6,6 +7,15 @@ enum Skill {
     TAILWIND = "Tailwind CSS",
     TYPESCRIPT = "TypeScript",
     GIT = "Git",
+}
+
+export interface Project {
+    title: string;
+    liveUrl: string;
+    codeUrl: string;
+    description: string;
+    skills: string[];
+    image: StaticImageData;
 }
 
 const projects = [

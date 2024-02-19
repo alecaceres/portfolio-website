@@ -20,6 +20,7 @@ export default function RootLayout({
       <link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
         rel="stylesheet"
+        // @ts-ignore // read about precedence to import this stylesheet
         precedence="default"
       />
     </html>

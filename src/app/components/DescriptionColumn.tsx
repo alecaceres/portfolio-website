@@ -1,15 +1,28 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-const DescriptionColumn = ({title, description, children}) => {
-    return (
-        <div>
-            <div>
-                <h2 className="text-5xl font-bold mb-4">{title}</h2>
-                <p className="text-secondary-200 text-2xl leading-normal">{description}</p>
-            </div>
-            <div>{children}</div>
-        </div>
-    )
+interface DescriptionColumnProps {
+  title: string;
+  description: string;
+  children?: ReactNode;
 }
+
+const DescriptionColumn: React.FC<DescriptionColumnProps> = ({
+  title,
+  description,
+  children,
+}) => {
+  const titleClass = "text-5xl font-bold mb-4";
+  const descriptionClass = "text-secondary-200 text-2xl leading-normal";
+
+  return (
+    <>
+      <div>
+        <h2 className={titleClass}>{title}</h2>
+        <p className={descriptionClass}>{description}</p>
+      </div>
+      {children && <div>{children}</div>}
+    </>
+  );
+};
 
 export default DescriptionColumn;

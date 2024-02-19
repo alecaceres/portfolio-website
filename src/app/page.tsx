@@ -14,7 +14,6 @@ export default function Home() {
         <Education/>
         <Projects/>
       </div>
-      {/* <Footer /> */}
     </main>
   );
 }
