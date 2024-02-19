@@ -5,9 +5,9 @@ import {Project} from "@/sections/Projects/projects"
 
 const ProjectCard: React.FC<Project> = ({ title, liveUrl, codeUrl, description, skills, image }) => {
     return (
-        <article className="project-card flex flex-col relative gap-6 min-w-[400px] max-w-[600px] border-white border-2 rounded-3xl overflow-hidden">
+        <article className="project-card flex flex-col relative gap-6 min-w-[260px] max-w-[400px] md:min-w-[400px] md:max-w-[600px] border-white border-2 rounded-3xl overflow-hidden">
             <Image
-                className="w-full h-64"
+                className="w-full h-64 object-cover"
                 src={image}
                 alt={title}
             />
@@ -23,7 +23,7 @@ const ProjectCard: React.FC<Project> = ({ title, liveUrl, codeUrl, description, 
                         </span>
                     ))}
                 </div>
-                <div className="actions flex gap-4">
+                <div className="actions flex gap-4 flex-wrap">
                     <Link href={liveUrl} target="_blank" rel="noopener noreferrer" className="action-link rounded-lg border-white border-solid border-2 py-1 px-2 hover:bg-white hover:bg-opacity-10">
                         <i className="ri-play-line mr-2"></i>See Live
                     </Link>

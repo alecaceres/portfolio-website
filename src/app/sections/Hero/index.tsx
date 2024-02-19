@@ -20,6 +20,23 @@ const thingsILove: string[] = [
   "languages",
 ];
 
+interface HireMeButtonProps {
+  className: string;
+}
+
+const HireMeButton: React.FC<HireMeButtonProps> = ({className}) => (
+  <div className={className}>
+    <Link
+      href="https://www.linkedin.com/in/caceresale/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl mr-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium"
+    >
+      Hire Me!
+  </Link>
+</div>
+)
+
 const HeroSection: React.FC = () => {
   return (
     <section className="lg:py-16">
@@ -49,16 +66,7 @@ const HeroSection: React.FC = () => {
               />
             </em>
           </p>
-          <div>
-            <Link
-                href="https://www.linkedin.com/in/caceresale/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl mr-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium"
-              >
-                Hire Me!
-            </Link>
-          </div>
+          <HireMeButton className="hidden sm:block"/>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -76,6 +84,7 @@ const HeroSection: React.FC = () => {
               height="300"
             />
           </div>
+          <HireMeButton className="sm:hidden text-center mt-6"/>
         </motion.div>
       </div>
     </section>

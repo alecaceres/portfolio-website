@@ -1,5 +1,5 @@
 import GradientSpot from "@/components/GradientSpot";
-import {About, Education, Experience, Hero, Navbar, Technologies, Projects} from "@/sections";
+import {About, Education, Experience, Hero, Navbar, Technologies, Projects, WorkInProgress} from "@/sections";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Navbar />
       <div className="flex flex-col container mt-24 mx-auto px-12 py-4 relative gap-y-24">
         <Hero />
+        <WorkInProgress/>
         <Technologies/>
         <About/>
         <Experience/>

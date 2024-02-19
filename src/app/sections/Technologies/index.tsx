@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import DescriptionColumn from "@/components/DescriptionColumn";
 import Link from "next/link";
+import { TwoColumns } from "@/layouts";
 
 interface Technology {
     name: string;
@@ -57,7 +58,7 @@ const technologies: Technology[] = [
 
 const RightColumn: React.FC = () => {
     return (
-        <div className="grid grid-cols-4 gap-14">
+        <div className="grid grid-cols-6 sm:grid-cols-4 gap-2 sm:gap-10 md:gap-6 lg:gap-14">
             {technologies.map(({name, url}) => (
                 <Link key={name} href={url} className="col-span-1" target="_blank">
                     <div className="h-28 relative hover:scale-105">
@@ -77,12 +78,14 @@ const RightColumn: React.FC = () => {
 
 const Technologies: React.FC = () => {
     return (
-        <section id="skills" className="grid grid-cols-2 gap-4">
-            <DescriptionColumn
-                title="Technologies"
-                description="Some of these I've learnt for work, some for just for fun. I adapt myself to challenges."
-            />
-            <RightColumn/>
+        <section id="skills">
+            <TwoColumns>
+                <DescriptionColumn
+                    title="Technologies"
+                    description="Some of these I've learnt for work, some for just for fun. I adapt myself to challenges."
+                />
+                <RightColumn/>
+            </TwoColumns>
         </section>
     )
 }
