@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 25, 25, 25;
+    --background-end-rgb: 25, 25, 25;
   }
 }
 
@@ -30,4 +30,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.gradient-spot {
+  background: radial-gradient(ellipse at center, 
+      rgba(246,59,193,0.39) 0%, 
+      rgba(231,64,197,0.395791) 8.27252%, 
+      rgba(194,77,207,0.409791) 28.2725%, 
+      rgba(61,123,244,0.46) 100%
+  );
 }
