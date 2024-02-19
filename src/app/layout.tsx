@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter } from "next/font/google";
 import "@/globals.css";
 
@@ -16,13 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-      <link
-        href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-        rel="stylesheet"
-        // @ts-ignore // read about precedence to import this stylesheet
-        precedence="default"
-      />
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={inter.className}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
