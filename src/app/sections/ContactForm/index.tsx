@@ -9,7 +9,7 @@ const SubmittedMessage: React.FC = () => {
       <p className="text-center font-semibold text-3xl">
         Thank you for your message!
       </p>
-      <p>I'll try to contact you soon</p>
+      <p>I&apos;ll try to contact you soon</p>
     </div>
   )
 }
@@ -21,9 +21,9 @@ const LeftColumn: React.FC = () => {
       <hr className="border-secondary-500 border-2"/>
       <p className='text-2xl leading-normal'>
         Have a project in mind or just want to chat? Feel free to reach out!
-        Whether you're looking to collaborate, discuss opportunities, or simply say hello,
-        I'm always open to new connections and exciting ventures.
-        Drop me a message using the form below, and I'll get back to you as soon as possible.
+        Whether you&apos;re looking to collaborate, discuss opportunities, or simply say hello,
+        I&apos;m always open to new connections and exciting ventures.
+        Drop me a message using the form below, and I&apos;ll get back to you as soon as possible.
         Looking forward to hearing from you!
       </p>
     </div>
