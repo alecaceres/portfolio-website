@@ -28,6 +28,10 @@ const navLinks = [
     title: "Projects",
     path: "#projects",
   },
+  {
+    title: "Contact",
+    path: "#contact",
+  }
 ];
 
 const Navbar: React.FC = () => {
@@ -59,7 +63,9 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? (
+        <MenuOverlay links={navLinks} closeNavbar={() => setNavbarOpen(false)}/>
+      ) : null}
     </nav>
   );
 };

@@ -47,6 +47,6 @@ main > div > section {
 }
 
 * {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
   

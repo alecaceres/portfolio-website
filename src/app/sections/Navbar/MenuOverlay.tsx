@@ -6,13 +6,17 @@ interface NavLink {
   path: string;
 }
 
-type links = NavLink[];
+interface MenuOverlayProps {
+  links: NavLink[];
+  closeNavbar: () => void;
+}
 
-const MenuOverlay = ({ links }: {links: links}) => {
+
+const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, closeNavbar }) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index: number) => (
-        <li key={index}>
+        <li key={index} onClick={closeNavbar}>
           <NavLink href={link.path} title={link.title} />
         </li>
       ))}
