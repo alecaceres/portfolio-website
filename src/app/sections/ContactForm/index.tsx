@@ -56,6 +56,7 @@ const Input: React.FC<{
       onChange={(e) => onChange(e.target.value)}
       type={type}
       placeholder={label}
+      required
     />
   </div>
 );
@@ -72,6 +73,8 @@ const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, se
         className="textarea w-full textarea-primary bg-transparent border-2 border-white px-3 py-2 min-h-24 sm:min-h-32 md:min-h-40 lg:min-h-64"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
+        minLength={20}
+        required
       ></textarea>
     </div>
     <input
