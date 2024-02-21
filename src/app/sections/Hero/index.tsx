@@ -30,7 +30,7 @@ const HireMeButton: React.FC<HireMeButtonProps> = ({className}) => (
       href="https://www.linkedin.com/in/caceresale/"
       target="_blank"
       rel="noopener noreferrer"
-      className="px-4 md:px-6 inline-block py-2 md:py-3 w-full sm:w-fit rounded-lg md:rounded-2xl mr-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white md:text-xl lg:text-2xl font-medium"
+      className="h-full px-4 md:px-6 inline-block py-2 md:py-3 w-full sm:w-fit rounded-lg md:rounded-2xl mr-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white md:text-xl lg:text-2xl font-medium"
     >
       Hire Me!
     </Link>
@@ -43,7 +43,7 @@ const DownloadCVButton: React.FC<{ className: string }> = ({ className }) => (
       href="/documents/AC_CV.pdf"
       target="_blank"
       download="AC_CV.pdf"
-      className="px-4 md:px-6 inline-block py-2 md:py-3 w-full sm:w-fit rounded-lg md:rounded-2xl bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white md:text-xl lg:text-2xl font-medium"
+      className="px-4 md:px-6 inline-block py-2 md:py-3 w-full sm:w-fit rounded-lg md:rounded-2xl hover:bg-slate-800 border-2 border-slate-500 text-white md:text-xl lg:text-2xl font-medium"
     >
       Download CV
     </Link>
