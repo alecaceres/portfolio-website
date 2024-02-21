@@ -82,11 +82,16 @@ const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, se
         required
       ></textarea>
     </div>
-    <input
-      className="file:bg-primary-100 file:rounded-md file:font-medium file:px-4"
-      type="file"
-      onChange={(e) => setFile(e.target.files ? e.target.files[0] : null)} // Set only the first file
-    />
+    <div className="flex flex-col">
+      <label className="label font-semibold">
+        <span className="label-text">Attachment (optional)</span>
+      </label>
+      <input
+        className="file:bg-primary-100 file:rounded-md file:font-medium file:px-4"
+        type="file"
+        onChange={(e) => setFile(e.target.files ? e.target.files[0] : null)} // Set only the first file
+      />
+    </div>
     <button
       className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium hover:opacity-95"
       type="submit"

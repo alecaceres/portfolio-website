@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
           />
         </Link>
         <div className="mobile-menu block md:hidden">
-          <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} size={15}/>
+          <Hamburger label="hamburger-icon" toggled={navbarOpen} toggle={setNavbarOpen} size={15}/>
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">

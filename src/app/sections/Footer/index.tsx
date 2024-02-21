@@ -9,12 +9,14 @@ const Footer: React.FC = () => {
                 <Link
                     href="https://github.com/alecaceres/portfolio-website"
                     target="_blank"
+                    aria-label="Go to Ale's Github"
                 >
                     <i className="ri-github-fill text-lg"></i>
                 </Link>
                 <Link
                     href="https://www.linkedin.com/in/caceresale/"
                     target="_blank"
+                    aria-label="Go to Ale's LinkedIn"
                 >
                     <i className="ri-linkedin-fill text-lg"></i>
                 </Link>
