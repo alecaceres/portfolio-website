@@ -1,5 +1,5 @@
 import GradientSpot from "@/components/GradientSpot";
-import {About, Education, Experience, Hero, Navbar, Technologies, Projects, WorkInProgress, ContactForm} from "@/sections";
+import {About, Education, Experience, Hero, Navbar, Technologies, Projects, WorkInProgress, ContactForm, Footer} from "@/sections";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
         <Projects/>
         <ContactForm/>
       </div>
+      <Footer/>
     </main>
   );
 }
