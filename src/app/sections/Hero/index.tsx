@@ -96,6 +96,7 @@ const HeroSection: React.FC = () => {
               className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]"
               width="300"
               height="300"
+              layout="responsive"
             />
           </div>
           <div className="flex justify-center space-x-4 mt-6 sm:hidden">

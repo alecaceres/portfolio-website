@@ -12,8 +12,6 @@ const About: React.FC = () => {
                     src={programmer}
                     alt="programmer"
                     layout="responsive"
-                    width={1300}
-                    height={1028}
                 />
                 <DescriptionColumn
                     title="About Me"
