@@ -4,8 +4,8 @@ import { FormEvent, useState } from 'react';
 
 const SubmittedMessage: React.FC = () => {
   return (
-    <div>
-      <p className="text-center font-semibold text-3xl mb-6">
+    <div className="text-center">
+      <p className="font-semibold text-3xl mb-6">
         Thank you for your message!
       </p>
       <p>I&apos;ll try to contact you soon</p>

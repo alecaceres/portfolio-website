@@ -15,7 +15,7 @@ export const config = {
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const form = formidable({
     multiples: true, // Allow parsing of multiple files
-    uploadDir: __dirname, // Specify upload directory
+    uploadDir: "/tmp", // Specify upload directory
   });
 
   form.parse(req, async (err: any, fields: formidable.Fields, files: formidable.Files) => {
