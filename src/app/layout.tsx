@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
 import { Inter } from "next/font/google";
+import 'remixicon/fonts/remixicon.css'
 import "@/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,12 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-          rel="stylesheet"
-        />
-      </head>
       <body className={inter.className}>
         {children}
         <SpeedInsights />
