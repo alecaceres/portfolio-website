@@ -1,24 +1,23 @@
-'use client'
-
-import { TwoColumns } from '@/layouts'
-import { FormEvent, useState } from 'react'
+"use client"
+import { TwoColumns } from '@/layouts';
+import { FormEvent, useState } from 'react';
 
 const SubmittedMessage: React.FC = () => {
   return (
     <div>
-      <p className="text-center font-semibold text-3xl">
+      <p className="text-center font-semibold text-3xl mb-6">
         Thank you for your message!
       </p>
       <p>I&apos;ll try to contact you soon</p>
     </div>
-  )
+  );
 }
 
 const LeftColumn: React.FC = () => {
   return (
     <div className="flex flex-col gap-4">
       <h2 className="text-5xl font-extrabold bg-gradient-to-r from-primary-600 to-secondary-600 text-transparent bg-clip-text">Contact Me!</h2>
-      <hr className="border-secondary-500 border-2"/>
+      <hr className="border-secondary-500 border-2" />
       <p className='text-2xl leading-normal'>
         Have a project in mind or just want to chat? Feel free to reach out!
         Whether you&apos;re looking to collaborate, discuss opportunities, or simply say hello,
@@ -27,20 +26,19 @@ const LeftColumn: React.FC = () => {
         Looking forward to hearing from you!
       </p>
     </div>
-  )
+  );
 }
-
 
 interface FormProps {
   onSubmit: (e: FormEvent) => Promise<void>;
   setName: (name: string) => void;
   setEmail: (email: string) => void;
   setMessage: (message: string) => void;
+  setFile: (file: File | null) => void; // Change to setFile instead of setFiles
   name: string;
   email: string;
   message: string;
 }
-
 
 const Input: React.FC<{
   label: string;
@@ -62,7 +60,7 @@ const Input: React.FC<{
   </div>
 );
 
-const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, name, email, message }) => (
+const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, setFile, name, email, message }) => (
   <form onSubmit={onSubmit} className="flex flex-col gap-8">
     <Input label="Name" type="text" value={name} onChange={setName} />
     <Input label="Email" type="email" value={email} onChange={setEmail} />
@@ -76,6 +74,11 @@ const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, na
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
     </div>
+    <input
+      className="file:bg-primary-100 file:rounded-md file:font-medium file:px-4"
+      type="file"
+      onChange={(e) => setFile(e.target.files ? e.target.files[0] : null)} // Set only the first file
+    />
     <button
       className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium"
       type="submit"
@@ -86,48 +89,50 @@ const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, na
 );
 
 const ContactForm: React.FC = () => {
-  const [isSubmitted, setSubmitted] = useState<boolean>(false)
-  const [name, setName] = useState<string>('')
-  const [email, setEmail] = useState<string>('')
-  const [message, setMessage] = useState<string>('')
+  const [isSubmitted, setSubmitted] = useState<boolean>(false);
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+  const [file, setFile] = useState<File | null>(null); // Change to file instead of files
 
   const onSubmit = async (e: FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('message', message);
+    if (file) {
+      formData.append('file', file); // Append only the first file
+    }
 
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-        headers: {
-          'content-type': 'application/json',
-        },
-      })
+        body: formData,
+      });
       if (res.status === 200) {
-        setSubmitted(true)
+        setSubmitted(true);
       }
     } catch (err: any) {
-      console.error('Err', err)
+      console.error('Err', err);
     }
   }
 
   if (isSubmitted) {
-    return <SubmittedMessage/>
+    return <SubmittedMessage />;
   }
 
-  const formProps = {onSubmit, setName, name, email, setEmail, message, setMessage}
+  const formProps = { onSubmit, setName, name, email, setEmail, message, setMessage, setFile };
 
   return (
     <section id="contact">
       <TwoColumns>
-        <LeftColumn/>
+        <LeftColumn />
         <Form {...formProps} />
       </TwoColumns>
     </section>
-  )
+  );
 }
 
-export default ContactForm
+export default ContactForm;
