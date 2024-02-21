@@ -40,12 +40,15 @@ interface FormProps {
   message: string;
 }
 
-const Input: React.FC<{
+interface InputProps {
   label: string;
   type: string;
   value: string;
   onChange: (value: string) => void;
-}> = ({ label, type, value, onChange }) => (
+  autoComplete?: string;
+}
+
+const Input: React.FC<InputProps> = ({ label, type, value, onChange, autoComplete }) => (
   <div>
     <label className="label font-semibold">
       <span className="pb-2 label-text">{label}</span>
@@ -56,6 +59,7 @@ const Input: React.FC<{
       onChange={(e) => onChange(e.target.value)}
       type={type}
       placeholder={label}
+      autoComplete={autoComplete}
       required
     />
   </div>
@@ -63,8 +67,8 @@ const Input: React.FC<{
 
 const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, setFile, name, email, message }) => (
   <form onSubmit={onSubmit} className="flex flex-col gap-8">
-    <Input label="Name" type="text" value={name} onChange={setName} />
-    <Input label="Email" type="email" value={email} onChange={setEmail} />
+    <Input label="Name" type="text" value={name} onChange={setName} autoComplete="name" />
+    <Input label="Email" type="email" value={email} onChange={setEmail} autoComplete="email" />
     <div>
       <label className="label font-semibold">
         <span className="label-text">Message</span>
@@ -74,6 +78,7 @@ const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, se
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         minLength={20}
+        placeholder="Hello, I'm interested in discussing..."
         required
       ></textarea>
     </div>
@@ -83,7 +88,7 @@ const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, se
       onChange={(e) => setFile(e.target.files ? e.target.files[0] : null)} // Set only the first file
     />
     <button
-      className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium"
+      className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium hover:opacity-95"
       type="submit"
     >
       Submit

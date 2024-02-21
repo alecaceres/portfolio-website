@@ -26,7 +26,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     const mailgun = new Mailgun(require('form-data'));
-    const client = mailgun.client({ username: 'api', key: API_KEY });
+    const client = mailgun.client({ username: 'api', key: API_KEY }); // Provide API key here
 
     const { name, email, message } = fields;
 
