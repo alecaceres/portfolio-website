@@ -30,12 +30,25 @@ const HireMeButton: React.FC<HireMeButtonProps> = ({className}) => (
       href="https://www.linkedin.com/in/caceresale/"
       target="_blank"
       rel="noopener noreferrer"
-      className="px-6 inline-block py-3 w-full sm:w-fit rounded-2xl mr-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white text-2xl font-medium"
+      className="px-4 md:px-6 inline-block py-2 md:py-3 w-full sm:w-fit rounded-lg md:rounded-2xl mr-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white md:text-xl lg:text-2xl font-medium"
     >
       Hire Me!
-  </Link>
-</div>
-)
+    </Link>
+  </div>
+);
+
+const DownloadCVButton: React.FC<{ className: string }> = ({ className }) => (
+  <div className={className}>
+    <Link
+      href="/documents/AC_CV.pdf"
+      target="_blank"
+      download="AC_CV.pdf"
+      className="px-4 md:px-6 inline-block py-2 md:py-3 w-full sm:w-fit rounded-lg md:rounded-2xl bg-gradient-to-r from-primary-600 to-secondary-600 hover:bg-slate-200 text-white md:text-xl lg:text-2xl font-medium"
+    >
+      Download CV
+    </Link>
+  </div>
+);
 
 const HeroSection: React.FC = () => {
   return (
@@ -66,7 +79,10 @@ const HeroSection: React.FC = () => {
               />
             </em>
           </p>
-          <HireMeButton className="hidden sm:block"/>
+          <div className="flex space-x-4">
+            <HireMeButton className="hidden sm:block" />
+            <DownloadCVButton className="hidden sm:block" />
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -84,7 +100,10 @@ const HeroSection: React.FC = () => {
               height="300"
             />
           </div>
-          <HireMeButton className="sm:hidden text-center mt-6"/>
+          <div className="flex justify-center space-x-4 mt-6 sm:hidden">
+            <HireMeButton className="sm:hidden text-center mt-6"/>
+            <DownloadCVButton className="sm:hidden text-center mt-6"/>
+          </div>
         </motion.div>
       </div>
     </section>

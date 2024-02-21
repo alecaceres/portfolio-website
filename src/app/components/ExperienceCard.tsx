@@ -11,7 +11,7 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ startMonth, endMonth = "Present", organisation, location, description, position }) => {
     return (
-        <article className="flex flex-col gap-6 border-b-white border-b-2 pb-4 text-secondary-200">
+        <article className="flex flex-col gap-6 border-b-white border-b-2 pb-4 text-secondary-100">
             <div className="flex justify-between">
                 <span className="text-xl">{position}</span>
                 <span className="text-sm"><i className="ri-calendar-line mr-4"></i>{startMonth} - {endMonth}</span>
