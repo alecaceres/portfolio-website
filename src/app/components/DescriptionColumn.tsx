@@ -11,14 +11,11 @@ const DescriptionColumn: React.FC<DescriptionColumnProps> = ({
   description,
   children,
 }) => {
-  const titleClass = "text-5xl font-bold mb-4";
-  const descriptionClass = "text-secondary-200 text-2xl leading-normal";
-
   return (
     <>
       <div>
-        <h2 className={titleClass}>{title}</h2>
-        <p className={descriptionClass}>{description}</p>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-3 lg:mb-4">{title}</h2>
+        <p className="text-secondary-100 text-xl lg:text-2xl leading-normal">{description}</p>
       </div>
       {children && <div>{children}</div>}
     </>

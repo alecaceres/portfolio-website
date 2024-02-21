@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="border-t-primary-600 border-t-2 mx-3 pt-8 text-white text-lg flex flex-col text-center gap-6 mb-8">
+        <footer className="border-t-primary-600 border-t-2 mx-3 pt-8 text-white md:text-lg flex flex-col text-center gap-6 mb-8 mt-4">
             <a href="mailto:aleda997@gmail.com">aleda997@gmail.com</a>
             <div className="flex items-center justify-center gap-4">
                 <Link

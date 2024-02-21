@@ -18,7 +18,7 @@ const LeftColumn: React.FC = () => {
     <div className="flex flex-col gap-4">
       <h2 className="text-5xl font-extrabold bg-gradient-to-r from-primary-600 to-secondary-600 text-transparent bg-clip-text">Contact Me!</h2>
       <hr className="border-secondary-500 border-2" />
-      <p className='text-2xl leading-normal'>
+      <p className="text-secondary-100 text-xl lg:text-2xl leading-normal">
         Have a project in mind or just want to chat? Feel free to reach out!
         Whether you&apos;re looking to collaborate, discuss opportunities, or simply say hello,
         I&apos;m always open to new connections and exciting ventures.
@@ -69,7 +69,7 @@ const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, se
         <span className="label-text">Message</span>
       </label>
       <textarea
-        className="textarea w-full textarea-primary bg-transparent border-2 border-white px-3 py-2 min-h-64"
+        className="textarea w-full textarea-primary bg-transparent border-2 border-white px-3 py-2 min-h-24 sm:min-h-32 md:min-h-40 lg:min-h-64"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
