@@ -10,9 +10,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Alejandro Caceres",
   description: "Alejandro Caceres: Fullstack Engineer with 4+ years experience. Expert in React, Vue, Django, data science, ML. Fluent in English, Spanish, German.",
-  openGraph: {
-    images: '/og-image.png',
-  },
 };
 
 export default function RootLayout({
