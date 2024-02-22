@@ -11,7 +11,6 @@ const About: React.FC = () => {
                 <Image
                     src={programmer}
                     alt="programmer"
-                    layout="responsive"
                 />
                 <DescriptionColumn
                     title="About Me"

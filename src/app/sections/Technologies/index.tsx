@@ -53,6 +53,10 @@ const technologies: Technology[] = [
     {
         name: "storybook",
         url: "https://storybook.js.org/",
+    },
+    {
+        name: "docker",
+        url: "https://www.docker.com/",
     }
 ]
 

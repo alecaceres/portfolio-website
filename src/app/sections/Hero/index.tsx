@@ -40,7 +40,7 @@ const DownloadCVButton: React.FC<{ className: string }> = ({ className }) => (
     <Link
       href="/documents/AC_CV.pdf"
       target="_blank"
-      download="AC_CV.pdf"
+      rel="noopener noreferrer"
       className="px-4 md:px-6 inline-block py-2 md:py-3 w-full sm:w-fit rounded-lg md:rounded-2xl hover:bg-slate-800 border-2 border-slate-500 text-white md:text-xl lg:text-2xl font-medium"
     >
       Download CV
@@ -50,7 +50,7 @@ const DownloadCVButton: React.FC<{ className: string }> = ({ className }) => (
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-16 mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -96,7 +96,6 @@ const HeroSection: React.FC = () => {
               className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]"
               width="300"
               height="300"
-              layout="responsive"
             />
           </div>
           <div className="flex justify-center space-x-4 mt-6 sm:hidden">

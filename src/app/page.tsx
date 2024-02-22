@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <GradientSpot/>
       <Navbar />
-      <div className="flex flex-col container mt-24 mx-auto px-12 py-4 relative gap-y-12 sm:gap-y-16 md:gap-y-20 lg:gap-y-24">
+      <div className="flex flex-col container mt-24 mx-auto px-6 md:px-10 lg:px-12 py-4 relative gap-y-12 sm:gap-y-16 md:gap-y-20 lg:gap-y-24">
         <Hero />
         <Technologies/>
         <About/>

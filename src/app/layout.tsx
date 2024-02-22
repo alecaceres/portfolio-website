@@ -6,8 +6,10 @@ import 'remixicon/fonts/remixicon.css'
 import "@/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "Alejandro Caceres",
   description: "Alejandro Caceres: Fullstack Engineer with 4+ years experience. Expert in React, Vue, Django, data science, ML. Fluent in English, Spanish, German.",
 };
