@@ -24,7 +24,7 @@ const experience: Experience[] = [
         position: "Fullstack Engineer",
     },
     {
-        startMonth: "Jan 2020",
+        startMonth: "Jan 2019",
         endMonth: "May, 2021",
         organisation: "Warden Automation",
         location: "Asuncion, Paraguay",

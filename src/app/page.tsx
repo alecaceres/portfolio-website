@@ -1,6 +1,8 @@
 import GradientSpot from "@/components/GradientSpot";
 import {About, Education, Experience, Hero, Navbar, Technologies, Projects, ContactForm, Footer} from "@/sections";
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">

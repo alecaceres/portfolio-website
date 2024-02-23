@@ -11,7 +11,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: "Alejandro Caceres",
-  description: "Alejandro Caceres: Fullstack Engineer with 4+ years experience. Expert in React, Vue, Django, data science, ML. Fluent in English, Spanish, German.",
+  description: "Alejandro Caceres: Fullstack Engineer with 5+ years experience. Expert in React, Vue, Django, data science, ML. Fluent in English, Spanish, German.",
 };
 
 export default function RootLayout({
