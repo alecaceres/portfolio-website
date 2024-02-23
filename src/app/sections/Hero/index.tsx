@@ -42,6 +42,7 @@ const DownloadCVButton: React.FC<{ className: string }> = ({ className }) => (
       target="_blank"
       rel="noopener noreferrer"
       className="px-4 md:px-6 inline-block py-2 md:py-3 w-full sm:w-fit rounded-lg md:rounded-2xl hover:bg-slate-800 border-2 border-slate-500 text-white md:text-xl lg:text-2xl font-medium"
+      download
     >
       Download CV
     </Link>
