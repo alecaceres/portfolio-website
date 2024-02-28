@@ -35,8 +35,8 @@ const technologies: Technology[] = [
         url: "https://nextjs.org/",
     },
     {
-        name: "bootstrap",
-        url: "https://getbootstrap.com/",
+        name: "django",
+        url: "https://www.djangoproject.com/",
     },
     {
         name: "tailwind",
