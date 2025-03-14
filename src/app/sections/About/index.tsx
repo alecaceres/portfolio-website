@@ -14,7 +14,7 @@ const About: React.FC = () => {
                 />
                 <DescriptionColumn
                     title="About Me"
-                    description="I'm a fullstack web developer with over five years of experience."
+                    description="I'm a fullstack web developer with over six years of experience."
                 />
             </TwoColumns>
         </section>
