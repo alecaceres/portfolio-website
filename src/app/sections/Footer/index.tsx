@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             <span>
                 Designed by&nbsp;
                 <Link
-                    href="https://www.linkedin.com/in/erika-aquino-enrique/"
+                    href="https://erika.engineer/"
                     className="bg-gradient-to-r from-primary-600 to-secondary-600 text-transparent bg-clip-text"
                     target="_blank"
                 >

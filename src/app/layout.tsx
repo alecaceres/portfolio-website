@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 const title = "Alejandro Caceres | Fullstack Engineer";
-const description = "Alejandro Caceres: Lead Fullstack Engineer with 5+ years experience. Expert in React, Vue, Next.js, Django, Python, TypeScript. Fluent in English, Spanish, German.";
+const description = "Alejandro Caceres: Lead Fullstack Engineer with 7+ years experience. Expert in React, Vue, Next.js, Django, Python, TypeScript. Fluent in English, Spanish, German.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
