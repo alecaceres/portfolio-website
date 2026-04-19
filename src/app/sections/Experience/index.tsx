@@ -1,23 +1,40 @@
+import { getTranslations } from 'next-intl/server';
 import DescriptionColumn from "@/components/DescriptionColumn";
 import React from "react";
-import experiences, {Experience} from "./experience";
+import experienceData, { ExperienceData } from "./experience";
 import ExperienceCard from "@/components/ExperienceCard";
 import { TwoColumns } from "@/layouts";
 
-const ExperienceSection: React.FC = () => {
-    return (
-        <section id="experience">
-            <TwoColumns>
-                <DescriptionColumn
-                    title="Experience"
-                    description="From scrappy startups to growing platforms, I've built features end-to-end, mentored engineers, and made technical decisions that actually mattered. I care about clean, scalable code — and even more about shipping things that solve real problems."
-                />
-                <div className="flex flex-col gap-10">
-                    {experiences.map((experience: Experience, idx: number) => <ExperienceCard key={`experience-${idx}`} {...experience} />)}
-                </div>
-            </TwoColumns>
-        </section>
-    )
-}
+const ExperienceSection = async () => {
+  const t = await getTranslations('experience');
+  const tMonths = await getTranslations('monthAbbr');
+
+  const localizeDate = (dateStr: string) =>
+    dateStr.replace(
+      /^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/,
+      (m) => tMonths(m as Parameters<typeof tMonths>[0])
+    );
+
+  return (
+    <section id="experience">
+      <TwoColumns>
+        <DescriptionColumn title={t('title')} description={t('description')} />
+        <div className="flex flex-col gap-10">
+          {experienceData.map((exp: ExperienceData, idx: number) => (
+            <ExperienceCard
+              key={idx}
+              {...exp}
+              startMonth={localizeDate(exp.startMonth)}
+              endMonth={exp.endMonth ? localizeDate(exp.endMonth) : undefined}
+              position={t(`items.${idx}.position`)}
+              description={t(`items.${idx}.description`)}
+              presentLabel={t('present')}
+            />
+          ))}
+        </div>
+      </TwoColumns>
+    </section>
+  );
+};
 
 export default ExperienceSection;

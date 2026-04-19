@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "skills": "Skills",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi,",
+    "myNameIs": "my name is",
+    "role": "I'm a fullstack engineer",
+    "lovePrefix": "... and I love",
+    "hireMe": "Hire Me!",
+    "downloadCV": "Download CV",
+    "loves": ["coding", "travelling", "coffee", "numbers", "sports", "stats", "books", "cats", "history", "music", "snow", "languages"]
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a fullstack engineer with 7+ years of experience, comfortable across the whole stack — React and Vue on the frontend, Django and Python on the backend, and cloud on top. My roots are in data science and AI, so I bring a bit more than just engineering to the table. Trilingual, AWS certified, and always picking up something new."
+  },
+  "technologies": {
+    "title": "Technologies",
+    "description": "Some I use every day at work, others I picked up out of pure curiosity. Either way, I like staying sharp and learning whatever the problem calls for."
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "From scrappy startups to growing platforms, I've built features end-to-end, mentored engineers, and made technical decisions that actually mattered. I care about clean, scalable code — and even more about shipping things that solve real problems.",
+    "present": "Present",
+    "items": [
+      {
+        "position": "Lead Fullstack Engineer",
+        "description": "Leading the technical evolution of a creator-economy platform — scaling infrastructure for media-heavy workloads, establishing engineering best practices, and driving product decisions from idea to deployment."
+      },
+      {
+        "position": "Fullstack Engineer",
+        "description": "Shipped impactful features across a Django and React codebase for a platform helping thousands bridge skill gaps and connect with employers. Worked closely with product and design, and contributed to DEI-focused initiatives."
+      },
+      {
+        "position": "Fullstack Engineer",
+        "description": "Delivered Vue and Django features connecting social media creators with brands for campaign activations — tight deadlines, high ownership."
+      },
+      {
+        "position": "AI Engineer / Fullstack Web Developer",
+        "description": "Where it all started. Solved real business problems with data analysis and machine learning, then dove into fullstack web and mobile development. That combination of data and engineering thinking still shapes how I work today."
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "description": "A 5-year engineering degree shapes how you approach problems — methodically and thoroughly. A year studying abroad in Germany on top of that, and speaking three languages fluently, means I bring a broader perspective than most.",
+    "present": "Present",
+    "items": [
+      {
+        "position": "Mechatronics Engineering",
+        "description": "5-year engineering degree with a focus on robotics, automation, and systems thinking."
+      },
+      {
+        "position": "Exchange Semesters",
+        "description": "A full year studying in Germany, taking courses in Electronics, Information Technologies, and Mechatronic Systems — while going from conversational to fully fluent in German."
+      },
+      {
+        "position": "AWS Certified Cloud Practitioner",
+        "description": "Foundational certification validating cloud fluency and AWS services knowledge."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "These are some projects I'm proud of",
+    "seeLive": "See Live",
+    "viewCode": "View Code",
+    "items": [
+      {
+        "title": "Personal website",
+        "description": "You are already here! Good to see you. I've built this project using Next.js for its fast development and SEO capabilities."
+      },
+      {
+        "title": "Live-chat rooms",
+        "description": "Real-time chatrooms app using Django and websockets with social authentication. It may take up to one minute to start since it's hosted on a free plan."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me!",
+    "description": "Got something interesting in mind? Whether it's a new role, a project worth building, or just a conversation — I'm always happy to chat. Drop me a message and I'll get back to you quickly.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "messagePlaceholder": "Hello, I'm interested in discussing...",
+    "attachment": "Attachment (optional)",
+    "submit": "Submit",
+    "successTitle": "Thank you for your message!",
+    "successMessage": "I'll try to contact you soon"
+  },
+  "monthAbbr": {
+    "Jan": "Jan",
+    "Feb": "Feb",
+    "Mar": "Mar",
+    "Apr": "Apr",
+    "May": "May",
+    "Jun": "Jun",
+    "Jul": "Jul",
+    "Aug": "Aug",
+    "Sep": "Sep",
+    "Oct": "Oct",
+    "Nov": "Nov",
+    "Dec": "Dec"
+  },
+  "footer": {
+    "githubLabel": "Go to Ale's Github",
+    "linkedinLabel": "Go to Ale's LinkedIn",
+    "designedBy": "Designed by"
+  }
+}

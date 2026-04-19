@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "skills": "Fähigkeiten",
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "education": "Ausbildung",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo,",
+    "myNameIs": "ich heiße",
+    "role": "Ich bin Fullstack-Entwickler",
+    "lovePrefix": "... und ich liebe",
+    "hireMe": "Stell mich ein!",
+    "downloadCV": "Lebenslauf herunterladen",
+    "loves": ["Programmieren", "Reisen", "Kaffee", "Zahlen", "Sport", "Statistik", "Bücher", "Katzen", "Geschichte", "Musik", "Schnee", "Sprachen"]
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Ich bin ein Fullstack-Entwickler mit über 7 Jahren Erfahrung, sicher im gesamten Stack — React und Vue im Frontend, Django und Python im Backend und Cloud obendrauf. Meine Wurzeln liegen in Data Science und KI, daher bringe ich mehr als nur Entwicklung mit. Dreisprachig, AWS-zertifiziert und immer dabei, Neues zu lernen."
+  },
+  "technologies": {
+    "title": "Technologien",
+    "description": "Manche nutze ich täglich bei der Arbeit, andere habe ich aus reiner Neugier erlernt. So oder so — ich bleibe gerne am Ball und lerne, was das Problem erfordert."
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "description": "Von kleinen Startups bis hin zu wachsenden Plattformen habe ich Features von A bis Z entwickelt, Ingenieure betreut und technische Entscheidungen getroffen, die wirklich etwas bewegt haben. Sauberer, skalierbarer Code ist mir wichtig — und noch mehr, Dinge zu liefern, die echte Probleme lösen.",
+    "present": "Heute",
+    "items": [
+      {
+        "position": "Lead Fullstack Engineer",
+        "description": "Ich leite die technische Weiterentwicklung einer Creator-Economy-Plattform — skaliere die Infrastruktur für medienintensive Workloads, etabliere Engineering Best Practices und treibe Produktentscheidungen von der Idee bis zum Deployment voran."
+      },
+      {
+        "position": "Fullstack Engineer",
+        "description": "Ich habe wirkungsvolle Features in einer Django- und React-Codebase für eine Plattform entwickelt, die Tausenden hilft, Kompetenzlücken zu schließen und Arbeitgeber zu finden. Enge Zusammenarbeit mit Produkt und Design sowie Beiträge zu DEI-Initiativen."
+      },
+      {
+        "position": "Fullstack Engineer",
+        "description": "Vue- und Django-Features geliefert, die Social-Media-Creator mit Marken für Kampagnen-Aktivierungen verbanden — enge Deadlines, hohe Eigenverantwortung."
+      },
+      {
+        "position": "KI-Entwickler / Fullstack Web-Entwickler",
+        "description": "Hier hat alles angefangen. Echte Geschäftsprobleme mit Datenanalyse und Machine Learning gelöst, dann in die Fullstack-Web- und Mobile-Entwicklung eingetaucht. Diese Kombination aus Daten- und Engineering-Denken prägt noch heute meine Arbeit."
+      }
+    ]
+  },
+  "education": {
+    "title": "Ausbildung",
+    "description": "Ein 5-jähriges Ingenieurstudium prägt, wie man an Probleme herangeht — methodisch und gründlich. Ein Auslandsjahr in Deutschland dazu und drei Sprachen fließend zu sprechen bedeutet, dass ich eine breitere Perspektive als die meisten mitbringe.",
+    "present": "Heute",
+    "items": [
+      {
+        "position": "Mechatronik-Ingenieurwesen",
+        "description": "5-jähriges Ingenieurstudium mit Schwerpunkt auf Robotik, Automatisierung und Systemdenken."
+      },
+      {
+        "position": "Auslandssemester",
+        "description": "Ein volles Jahr Studium in Deutschland, mit Kursen in Elektrotechnik, Informationstechnologien und Mechatronischen Systemen — dabei vom Konversationsniveau zur vollen Sprachbeherrschung im Deutschen."
+      },
+      {
+        "position": "AWS Certified Cloud Practitioner",
+        "description": "Grundlagenzertifizierung, die Cloud-Kompetenz und Kenntnisse der AWS-Dienste bestätigt."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projekte",
+    "description": "Das sind einige Projekte, auf die ich stolz bin",
+    "seeLive": "Live ansehen",
+    "viewCode": "Code ansehen",
+    "items": [
+      {
+        "title": "Persönliche Website",
+        "description": "Du bist bereits hier! Schön, dich zu sehen. Ich habe dieses Projekt mit Next.js entwickelt, wegen der schnellen Entwicklung und der SEO-Möglichkeiten."
+      },
+      {
+        "title": "Live-Chat-Räume",
+        "description": "Echtzeit-Chatraum-App mit Django und WebSockets sowie sozialer Authentifizierung. Es kann bis zu einer Minute dauern, bis die App startet, da sie auf einem kostenlosen Plan gehostet wird."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Hast du etwas Interessantes im Sinn? Ob neue Stelle, ein lohnenswertes Projekt oder einfach ein gutes Gespräch — ich bin immer offen. Schick mir eine Nachricht und ich melde mich schnell.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "messagePlaceholder": "Hallo, ich würde gerne über... sprechen",
+    "attachment": "Anhang (optional)",
+    "submit": "Absenden",
+    "successTitle": "Danke für deine Nachricht!",
+    "successMessage": "Ich werde mich so schnell wie möglich bei dir melden"
+  },
+  "monthAbbr": {
+    "Jan": "Jan",
+    "Feb": "Feb",
+    "Mar": "Mär",
+    "Apr": "Apr",
+    "May": "Mai",
+    "Jun": "Jun",
+    "Jul": "Jul",
+    "Aug": "Aug",
+    "Sep": "Sep",
+    "Oct": "Okt",
+    "Nov": "Nov",
+    "Dec": "Dez"
+  },
+  "footer": {
+    "githubLabel": "Zu Ales Github",
+    "linkedinLabel": "Zu Ales LinkedIn",
+    "designedBy": "Gestaltet von"
+  }
+}
