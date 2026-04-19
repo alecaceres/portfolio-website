@@ -25,9 +25,15 @@ export const metadata: Metadata = {
     "Python developer",
     "TypeScript",
     "Next.js",
+    "AWS",
+    "AWS Cloud Practitioner",
+    "Terraform",
     "software engineer",
     "data science",
     "machine learning",
+    "AI engineer",
+    "LangGraph",
+    "CrewAI",
     "hire fullstack engineer",
   ],
   openGraph: {
@@ -62,7 +68,9 @@ const jsonLd = {
     ],
     "knowsAbout": [
       "React", "Vue", "Next.js", "Nuxt", "TypeScript", "Python",
-      "Django", "Tailwind CSS", "Docker", "Data Science", "Machine Learning",
+      "Django", "Tailwind CSS", "Docker", "AWS", "Terraform",
+      "Data Science", "Machine Learning",
+      "OpenAI Agents SDK", "CrewAI", "LangGraph", "Autogen",
     ],
     "knowsLanguage": ["English", "Spanish", "German"],
     "worksFor": {

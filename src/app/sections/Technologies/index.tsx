@@ -57,6 +57,22 @@ const technologies: Technology[] = [
     {
         name: "docker",
         url: "https://www.docker.com/",
+    },
+    {
+        name: "aws",
+        url: "https://aws.amazon.com/",
+    },
+    {
+        name: "terraform",
+        url: "https://www.terraform.io/",
+    },
+    {
+        name: "playwright",
+        url: "https://playwright.dev/",
+    },
+    {
+        name: "github-actions",
+        url: "https://github.com/features/actions",
     }
 ]
 

@@ -24,6 +24,13 @@ const education: Education[] = [
         description: "I lived in Germany for one year, where I had the opportunity to improve my German skills while having lessons at the Electronics and Information Technologies and Mechanic and Mechatronic Systems departments",
         position: "Exchange Semesters",
     },
+    {
+        startMonth: "2024",
+        organisation: "Amazon Web Services",
+        location: "Online",
+        description: "Foundational certification validating cloud fluency and AWS services knowledge",
+        position: "AWS Certified Cloud Practitioner",
+    },
 ];
 
 export default education;
