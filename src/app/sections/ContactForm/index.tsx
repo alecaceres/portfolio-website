@@ -48,32 +48,37 @@ interface InputProps {
   autoComplete?: string;
 }
 
-const Input: React.FC<InputProps> = ({ label, type, value, onChange, autoComplete }) => (
-  <div>
-    <label className="label font-semibold">
-      <span className="pb-2 label-text">{label}</span>
-    </label>
-    <input
-      className="input w-full input-bordered input-primary bg-transparent border-2 border-white px-3 py-2"
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-      type={type}
-      placeholder={label}
-      autoComplete={autoComplete}
-      required
-    />
-  </div>
-);
+const Input: React.FC<InputProps> = ({ label, type, value, onChange, autoComplete }) => {
+  const id = label.toLowerCase();
+  return (
+    <div>
+      <label htmlFor={id} className="label font-semibold">
+        <span className="pb-2 label-text">{label}</span>
+      </label>
+      <input
+        id={id}
+        className="input w-full input-bordered input-primary bg-transparent border-2 border-white px-3 py-2"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        type={type}
+        placeholder={label}
+        autoComplete={autoComplete}
+        required
+      />
+    </div>
+  );
+};
 
 const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, setFile, name, email, message }) => (
   <form onSubmit={onSubmit} className="flex flex-col gap-8">
     <Input label="Name" type="text" value={name} onChange={setName} autoComplete="name" />
     <Input label="Email" type="email" value={email} onChange={setEmail} autoComplete="email" />
     <div>
-      <label className="label font-semibold">
+      <label htmlFor="message" className="label font-semibold">
         <span className="label-text">Message</span>
       </label>
       <textarea
+        id="message"
         className="textarea w-full textarea-primary bg-transparent border-2 border-white px-3 py-2 min-h-24 sm:min-h-32 md:min-h-40 lg:min-h-64"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
@@ -83,13 +88,14 @@ const Form: React.FC<FormProps> = ({ onSubmit, setName, setEmail, setMessage, se
       ></textarea>
     </div>
     <div className="flex flex-col">
-      <label className="label font-semibold">
+      <label htmlFor="attachment" className="label font-semibold">
         <span className="label-text">Attachment (optional)</span>
       </label>
       <input
+        id="attachment"
         className="file:bg-primary-100 file:rounded-md file:font-medium file:px-4"
         type="file"
-        onChange={(e) => setFile(e.target.files ? e.target.files[0] : null)} // Set only the first file
+        onChange={(e) => setFile(e.target.files ? e.target.files[0] : null)}
       />
     </div>
     <button
