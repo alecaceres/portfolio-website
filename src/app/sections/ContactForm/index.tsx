@@ -19,11 +19,9 @@ const LeftColumn: React.FC = () => {
       <h2 className="text-5xl font-extrabold bg-gradient-to-r from-primary-600 to-secondary-600 text-transparent bg-clip-text">Contact Me!</h2>
       <hr className="border-secondary-500 border-2" />
       <p className="text-secondary-100 text-xl lg:text-2xl leading-normal">
-        Have a project in mind or just want to chat? Feel free to reach out!
-        Whether you&apos;re looking to collaborate, discuss opportunities, or simply say hello,
-        I&apos;m always open to new connections and exciting ventures.
-        Drop me a message using the form below, and I&apos;ll get back to you as soon as possible.
-        Looking forward to hearing from you!
+        Got something interesting in mind? Whether it&apos;s a new role, a project worth building,
+        or just a conversation — I&apos;m always happy to chat.
+        Drop me a message and I&apos;ll get back to you quickly.
       </p>
     </div>
   );

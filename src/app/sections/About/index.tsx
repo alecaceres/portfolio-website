@@ -14,7 +14,7 @@ const About: React.FC = () => {
                 />
                 <DescriptionColumn
                     title="About Me"
-                    description="I'm a fullstack web developer with over six years of experience."
+                    description="I'm a fullstack engineer with 7+ years of experience, comfortable across the whole stack — React and Vue on the frontend, Django and Python on the backend, and cloud on top. My roots are in data science and AI, so I bring a bit more than just engineering to the table. Trilingual, AWS certified, and always picking up something new."
                 />
             </TwoColumns>
         </section>

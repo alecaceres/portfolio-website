@@ -102,7 +102,7 @@ const Technologies: React.FC = () => {
             <TwoColumns>
                 <DescriptionColumn
                     title="Technologies"
-                    description="Some of these I've learnt for work, some for just for fun. I adapt myself to challenges."
+                    description="Some I use every day at work, others I picked up out of pure curiosity. Either way, I like staying sharp and learning whatever the problem calls for."
                 />
                 <RightColumn/>
             </TwoColumns>

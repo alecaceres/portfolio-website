@@ -12,7 +12,7 @@ const experience: Experience[] = [
         startMonth: "Mar 2024",
         organisation: "Social Currant",
         location: "Washing DC, USA",
-        description: "Scale the app to handle media content provided by creators, implement modern engineering best practices and discuss product challenges",
+        description: "Leading the technical evolution of a creator-economy platform — scaling infrastructure for media-heavy workloads, establishing engineering best practices, and driving product decisions from idea to deployment.",
         position: "Lead Fullstack Engineer",
     },
     {
@@ -20,7 +20,7 @@ const experience: Experience[] = [
         endMonth: "Mar 2024",
         organisation: "Workfinder",
         location: "London, UK",
-        description: "Worked heavily on django and react codebase to help people fix their skill gaps and organisations reach their recruiting, DEI targets and other goals",
+        description: "Shipped impactful features across a Django and React codebase for a platform helping thousands bridge skill gaps and connect with employers. Worked closely with product and design, and contributed to DEI-focused initiatives.",
         position: "Fullstack Engineer",
     },
     {
@@ -28,7 +28,7 @@ const experience: Experience[] = [
         endMonth: "May 2022",
         organisation: "Social Currant",
         location: "Washington DC, USA",
-        description: "Temporary contract where I used Vue, django and Heroku to engage creators with brands for social media campaigns",
+        description: "Delivered Vue and Django features connecting social media creators with brands for campaign activations — tight deadlines, high ownership.",
         position: "Fullstack Engineer",
     },
     {
@@ -36,7 +36,7 @@ const experience: Experience[] = [
         endMonth: "May, 2021",
         organisation: "Warden Automation",
         location: "Asuncion, Paraguay",
-        description: "This is where my journey started. I worked on a variety of projects addressing business problems with data analysis and data science to then fully immerse myself in fullstack web and mobile development",
+        description: "Where it all started. Solved real business problems with data analysis and machine learning, then dove into fullstack web and mobile development. That combination of data and engineering thinking still shapes how I work today.",
         position: "AI Engineer / Fullstack Web Developer",
     },
 ];

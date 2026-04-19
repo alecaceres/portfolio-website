@@ -10,7 +10,7 @@ const EducationSection: React.FC = () => {
             <TwoColumns>
                 <DescriptionColumn
                     title="Education"
-                    description="I have a background in mechatronics engineering and also exchange semesters in Germany"
+                    description="A 5-year engineering degree shapes how you approach problems — methodically and thoroughly. A year studying abroad in Germany on top of that, and speaking three languages fluently, means I bring a broader perspective than most."
                 />
                 <div className="flex flex-col gap-10">
                     {educations.map((education: Education, idx: number) => (

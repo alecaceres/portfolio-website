@@ -10,7 +10,7 @@ const ExperienceSection: React.FC = () => {
             <TwoColumns>
                 <DescriptionColumn
                     title="Experience"
-                    description="I bring a wealth of experience in data science and full-stack development. My background includes building ETL pipelines, developing full-stack applications, and creating mobile apps using GCP technologies. I've also mentored junior engineers, led projects, and emphasized efficiency and scalability in my work."
+                    description="From scrappy startups to growing platforms, I've built features end-to-end, mentored engineers, and made technical decisions that actually mattered. I care about clean, scalable code — and even more about shipping things that solve real problems."
                 />
                 <div className="flex flex-col gap-10">
                     {experiences.map((experience: Experience, idx: number) => <ExperienceCard key={`experience-${idx}`} {...experience} />)}

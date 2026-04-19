@@ -13,7 +13,7 @@ const education: Education[] = [
         endMonth: "May 2021",
         organisation: "Universidad Nacional de Asuncion",
         location: "Asuncion, Paraguay",
-        description: "5-year engineering degree with focus on robotics and automation",
+        description: "5-year engineering degree with a focus on robotics, automation, and systems thinking.",
         position: "Mechatronics Engineering",
     },
     {
@@ -21,7 +21,7 @@ const education: Education[] = [
         endMonth: "Aug 2019",
         organisation: "Darmstadt University of Applied Sciences",
         location: "Darmstadt, Germany",
-        description: "I lived in Germany for one year, where I had the opportunity to improve my German skills while having lessons at the Electronics and Information Technologies and Mechanic and Mechatronic Systems departments",
+        description: "A full year studying in Germany, taking courses in Electronics, Information Technologies, and Mechatronic Systems — while going from conversational to fully fluent in German.",
         position: "Exchange Semesters",
     },
     {
